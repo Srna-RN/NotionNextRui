@@ -1,3 +1,9 @@
+/*
+ * @Author: srn
+ * @Date: 2026-04-27 09:09:18
+ * @LastEditTime: 2026-04-27 15:35:15
+ * @FilePath: /NotionNextRui/themes/heo/components/SideRight.js
+ */
 import Live2D from '@/components/Live2D'
 import dynamic from 'next/dynamic'
 import { AnalyticsCard } from './AnalyticsCard'
@@ -60,7 +66,7 @@ export default function SideRight(props) {
         {rightAreaSlot}
 
         <FaceBookPage />
-        <Live2D />
+        {/* <Live2D /> */}
 
         {/* 标签和成绩 */}
         <Card

@@ -1,7 +1,7 @@
 /*
  * @Author: srn
  * @Date: 2026-04-27 09:09:18
- * @LastEditTime: 2026-04-27 17:31:16
+ * @LastEditTime: 2026-04-27 17:39:58
  * @FilePath: /NotionNextRui/themes/heo/components/LatestPostsGroupMini.js
  */
 import LazyImage from '@/components/LazyImage'
@@ -36,7 +36,7 @@ export default function LatestPostsGroupMini({ latestPosts, siteInfo }) {
         const headerImage = post?.pageCoverThumbnail
           ? post.pageCoverThumbnail
           : siteInfo?.pageCover
-        console.log(111, post)
+        // console.log(111, post)
         return (
           <SmartLink
             key={post.id}
@@ -58,8 +58,8 @@ export default function LatestPostsGroupMini({ latestPosts, siteInfo }) {
               }>
               <div>
                 <div className='line-clamp-2 menu-link'>{post.title}</div>
-                <div className='text-gray-400'>{post.lastEditedDay}</div>
-                {/* <div className='text-gray-400'>{post}</div> */}
+                {/* <div className='text-gray-400'>{post.lastEditedDay}</div> */}
+                <div className='text-gray-400'>{post.publishDay}</div>
               </div>
             </div>
           </SmartLink>

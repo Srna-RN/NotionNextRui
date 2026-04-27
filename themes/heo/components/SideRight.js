@@ -1,7 +1,7 @@
 /*
  * @Author: srn
  * @Date: 2026-04-27 09:09:18
- * @LastEditTime: 2026-04-27 15:35:15
+ * @LastEditTime: 2026-04-27 16:27:14
  * @FilePath: /NotionNextRui/themes/heo/components/SideRight.js
  */
 import Live2D from '@/components/Live2D'
@@ -51,9 +51,9 @@ export default function SideRight(props) {
         )}
 
         {/* 联系交流群 */}
-        <div className='wow fadeInUp'>
+        {/* <div className='wow fadeInUp'>
           <TouchMeCard />
-        </div>
+        </div> */}
 
         {/* 最新文章列表 */}
         <div

@@ -1,3 +1,9 @@
+/*
+ * @Author: srn
+ * @Date: 2026-04-27 09:09:18
+ * @LastEditTime: 2026-04-27 10:47:15
+ * @FilePath: /NotionNextRui/themes/example/components/Footer.js
+ */
 import { BeiAnGongAn } from '@/components/BeiAnGongAn'
 import BeiAnSite from '@/components/BeiAnSite'
 import CopyRightDate from '@/components/CopyRightDate'

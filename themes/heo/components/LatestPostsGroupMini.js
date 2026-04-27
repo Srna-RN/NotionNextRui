@@ -1,3 +1,9 @@
+/*
+ * @Author: srn
+ * @Date: 2026-04-27 09:09:18
+ * @LastEditTime: 2026-04-27 17:05:13
+ * @FilePath: /NotionNextRui/themes/heo/components/LatestPostsGroupMini.js
+ */
 import LazyImage from '@/components/LazyImage'
 import { siteConfig } from '@/lib/config'
 import { useGlobal } from '@/lib/global'
@@ -26,8 +32,7 @@ export default function LatestPostsGroupMini({ latestPosts, siteInfo }) {
         </div>
       </div>
       {latestPosts.map(post => {
-        const selected =
-          currentPath === `${SUB_PATH}/${post.slug}`
+        const selected = currentPath === `${SUB_PATH}/${post.slug}`
         const headerImage = post?.pageCoverThumbnail
           ? post.pageCoverThumbnail
           : siteInfo?.pageCover
@@ -53,7 +58,8 @@ export default function LatestPostsGroupMini({ latestPosts, siteInfo }) {
               }>
               <div>
                 <div className='line-clamp-2 menu-link'>{post.title}</div>
-                <div className='text-gray-400'>{post.lastEditedDay}</div>
+                {/* <div className='text-gray-400'>{post.lastEditedDay}</div> */}
+                <div className='text-gray-400'>{post}</div>
               </div>
             </div>
           </SmartLink>
